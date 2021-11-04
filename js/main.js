@@ -81,19 +81,22 @@ class NiCommentManager {
         let targetLineNum = 0;
         let minCollisionTime = 999999;
         let minCongestionVal = 999999;
+        let maxTryCount = 30;
+        let randLine = 0;
 
-        for (let i=0; i < this._lines.length; i++) {
-            const line = this._lines[i];
+        for (let i=0; i < maxTryCount; i++) {
+            const randLine = Math.floor(Math.random() * this._lines.length);
+            const line = this._lines[randLine];
             const cTime = Math.max(0, line.calcCollisionTime(cWidth));
             const cVal = line.congestionValue();
             // 衝突時間と開幕の衝突量が両方0ならその行を使う
             if (cTime == 0 && cVal == 0) {
-                targetLineNum = i;
+                targetLineNum = randLine;
                 break;
             }
             // 衝突時間が短くてなおかつ開幕の衝突量も少なければその行を使う
             if (cTime < minCollisionTime && cVal <= minCongestionVal) {
-                targetLineNum = i;
+                targetLineNum = randLine;
                 minCollisionTime = cTime;
                 minCongestionVal = cVal;
             }
