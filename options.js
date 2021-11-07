@@ -1,6 +1,6 @@
 const OPTIONS = {
     // コメントの行数
-    lineNum: 10,
+    lineNum: 14,
 
     // コメントの1行の高さ
     // (1.0が1文字分の高さ)
@@ -8,7 +8,7 @@ const OPTIONS = {
     lineHeight: 1.4,
 
     // コメントの流れる時間(ミリ秒)
-    duration: 5000,
+    duration: 10000,
 
     // コメントの色設定
     // (CSSのcolor書式)
@@ -20,7 +20,7 @@ const OPTIONS = {
 
     // コメントのフォント
     // (CSSのfont-family書式)
-    fontFamily: `"Helvetica Neue", "メイリオ", Meiryo, Helvetica, Arial, sans-serif`,
+    fontFamily: `"Segoe", "メイリオ", Meiryo UI, Segoe UI, Arial, sans-serif`,
 
     // コメントのドロップシャドウ
     // (CSSのtext-shadow書式)
@@ -39,11 +39,11 @@ const OPTIONS = {
     // 透明度
     // (0.0-1.0で指定します。0.0に近いほど透明になります)
     // (CSSのopacity書式)
-    opacity: 0.6,
+    opacity: 0.8,
 
     // 表示する文字数制限
     // (超えた場合「…」で省略されます)
-    lengthLimit: 30,
+    lengthLimit: 100,
 
     // 表示形式指定
     // ($NAME$が名前、$COMMENT$がコメントに置き換えられます)
