@@ -51,7 +51,7 @@ const OPTIONS = {
 
     // コメジェネのcomment.xmlへのパス
     // 相対パスで指定してください
-    path: "../comment.xml",
+    path: "../HTML5CommentGenerator/comment.xml",
 
     // comment.xmlの読み込み間隔(ミリ秒)
     loadInterval: 500,
