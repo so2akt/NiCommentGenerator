@@ -20,7 +20,7 @@ const OPTIONS = {
 
     // コメントのフォント
     // (CSSのfont-family書式)
-    fontFamily: `"Segoe", "メイリオ", Meiryo UI, Segoe UI, Arial, sans-serif`,
+    fontFamily: `"Noto Sans JP", Noto Sans JP, sans-serif`,
 
     // コメントのドロップシャドウ
     // (CSSのtext-shadow書式)
